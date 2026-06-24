@@ -63,13 +63,17 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
         </div>
       </div>
 
-      <!-- Right: Image Placeholder -->
-      <div
-        class="hero-image float-animation"
-        role="img"
-        aria-label="Bild: Intelligentes Zugangssystem / Drehkreuz"
-      >
-        <span class="image-label">[ Bild: Zugangssystem / Drehkreuz ]</span>
+      <!-- Right: Hero image -->
+      <div class="hero-image float-animation">
+        <img
+          src="/images/personenzugang.webp"
+          alt="Moderne Personenzugangs-Schleusen (Speedgates) in einem hellen Empfangsbereich"
+          class="hero-img"
+          width="1280"
+          height="895"
+          fetchpriority="high"
+          decoding="async"
+        />
       </div>
     </div>
 
@@ -204,33 +208,21 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   transform: translateY(0);
 }
 
-/* ---- Image Placeholder Right ---- */
+/* ---- Hero image (right) ---- */
 .hero-image {
   aspect-ratio: 4 / 3;
   background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary) 100%);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   position: relative;
 }
 
-.hero-image::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(3,42,99,0.06) 0%, transparent 60%);
-}
-
-.image-label {
-  position: relative;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: var(--text-light);
-  text-align: center;
-  padding: var(--space-4);
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ---- Float Animation ---- */
