@@ -28,6 +28,7 @@ function scrollToKontakt() {
       <div class="category-strip" role="list" aria-label="Produktkategorien">
         <div class="category-pill active" role="listitem">Drehkreuze &amp; Schranken</div>
         <div class="category-pill" role="listitem">Zutrittskontrolle</div>
+        <div class="category-pill" role="listitem">Verkehr &amp; Infrastruktur</div>
         <div class="category-pill" role="listitem">Kassensysteme</div>
         <div class="category-pill" role="listitem">Software</div>
       </div>
@@ -91,15 +92,9 @@ function scrollToKontakt() {
         <!-- Product 2: Vollhoch-Drehkreuz -->
         <article class="product-card" data-scroll="card-3d" style="--reveal-delay: 120ms"
           aria-label="Produkt: Vollhoch-Drehkreuz">
-          <div class="product-image" role="img" aria-label="Bild: Vollhoch-Drehkreuz">
-            <div class="product-image-icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                <line x1="12" y1="3" x2="12" y2="21"/>
-                <line x1="3" y1="12" x2="21" y2="12"/>
-              </svg>
-            </div>
+          <div class="product-image">
+            <img src="/images/drehsperre.webp" alt="Vollhoch-Drehkreuz aus Edelstahl"
+              class="product-img" width="1280" height="896" loading="lazy" decoding="async" />
           </div>
           <div class="product-body">
             <span class="product-category">Drehkreuze &amp; Schranken</span>
@@ -145,13 +140,9 @@ function scrollToKontakt() {
         <article class="product-card" data-scroll="card-3d" style="--reveal-delay: 240ms"
           aria-label="Produkt: Speedgate – Flap-Barrier">
           <div class="product-badge product-badge--new">Neu</div>
-          <div class="product-image" role="img" aria-label="Bild: Speedgate Flap-Barrier">
-            <div class="product-image-icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 12h18M3 6h18M3 18h18"/>
-              </svg>
-            </div>
+          <div class="product-image">
+            <img src="/images/personenzugang.webp" alt="Speedgate / Flap-Barrier mit Glasflügeln im Eingangsbereich"
+              class="product-img" width="1280" height="895" loading="lazy" decoding="async" />
           </div>
           <div class="product-body">
             <span class="product-category">Drehkreuze &amp; Schranken</span>
@@ -196,14 +187,9 @@ function scrollToKontakt() {
         <!-- Product 4: RFID-Kartenleser -->
         <article class="product-card" data-scroll="card-3d" style="--reveal-delay: 0ms"
           aria-label="Produkt: RFID-Kartenleser">
-          <div class="product-image" role="img" aria-label="Bild: RFID-Kartenleser">
-            <div class="product-image-icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="5" width="20" height="14" rx="2"/>
-                <path d="M2 10h20"/>
-              </svg>
-            </div>
+          <div class="product-image">
+            <img src="/images/rfid.webp" alt="RFID-Kartenleser mit vorgehaltener Zutrittskarte"
+              class="product-img" width="1280" height="895" loading="lazy" decoding="async" />
           </div>
           <div class="product-body">
             <span class="product-category">Zutrittskontrolle</span>
@@ -346,6 +332,68 @@ function scrollToKontakt() {
                 On-Premise oder Cloud-Hosting
               </li>
             </ul>
+          </div>
+        </article>
+
+        <!-- Featured product: Vehicle / tunnel infrastructure -->
+        <article class="product-card product-card--featured" data-scroll="fade-up" style="--reveal-delay: 0ms"
+          aria-label="Produkt: Schranken-, Zufahrts- und Tunnelsysteme">
+          <div class="featured-body">
+            <span class="product-category">Verkehr &amp; Infrastruktur</span>
+            <h3 class="product-name featured-name">Schranken-, Zufahrts- &amp; Tunnelsysteme</h3>
+            <p class="product-desc">
+              Zutritts- und Abfertigungstechnik nicht nur für Personen, sondern auch für Fahrzeuge:
+              Von der Parkhaus-Schranke über die Zufahrtskontrolle bis hin zur Verkehrs- und
+              Sicherheitstechnik in Tunneln steuern wir den Verkehrsfluss zuverlässig – für PKW
+              und LKW, bei jedem Verkehrsaufkommen.
+            </p>
+            <ul class="product-features" aria-label="Produktmerkmale">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Schranken- &amp; Zufahrtsanlagen für PKW und LKW
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Kennzeichenerkennung (ANPR) &amp; RFID-Fahrzeugidentifikation
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Verkehrsleit-, Signal- &amp; Sicherheitstechnik für Tunnel
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Integrierte Abrechnung &amp; Auslastungsanzeige in Echtzeit
+              </li>
+            </ul>
+          </div>
+          <div class="featured-gallery" role="group" aria-label="Einsatzbereiche im Tunnel">
+            <figure class="gallery-item">
+              <img src="/images/tunnel-leer.webp" alt="Beleuchteter Verkehrstunnel ohne Fahrzeuge"
+                width="1280" height="905" loading="lazy" decoding="async" />
+              <figcaption>Ohne Verkehr</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="/images/tunnel-pkw.webp" alt="Verkehrstunnel mit fahrenden PKW"
+                width="1000" height="707" loading="lazy" decoding="async" />
+              <figcaption>PKW-Verkehr</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="/images/tunnel-lkw.webp" alt="Verkehrstunnel mit einem LKW im Schwerlastverkehr"
+                width="1280" height="905" loading="lazy" decoding="async" />
+              <figcaption>LKW-Verkehr</figcaption>
+            </figure>
           </div>
         </article>
 
@@ -506,6 +554,81 @@ function scrollToKontakt() {
   opacity: 0.4;
 }
 
+.product-image {
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition);
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.04);
+}
+
+/* ---- Featured product (vehicle / tunnel) ---- */
+.product-card--featured {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: stretch;
+  border: 2px solid var(--primary);
+}
+
+.featured-body {
+  flex: 1 1 50%;
+  min-width: 0;
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-name {
+  font-size: 1.25rem;
+}
+
+.featured-gallery {
+  flex: 1 1 50%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  align-content: center;
+  padding: var(--space-5);
+  padding-left: 0;
+  background: var(--background-soft);
+}
+
+.gallery-item {
+  margin: 0;
+  min-width: 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  box-shadow: var(--shadow-card);
+}
+
+.gallery-item figcaption {
+  margin-top: var(--space-2);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-light);
+  text-align: center;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 /* ---- Product body ---- */
 .product-body {
   padding: var(--space-5);
@@ -618,11 +741,36 @@ function scrollToKontakt() {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Stack the featured card: text on top, gallery below */
+  .product-card--featured {
+    flex-direction: column;
+  }
+
+  /* Reset flex basis so children size to content (not 50% of height) */
+  .featured-body,
+  .featured-gallery {
+    flex: 0 0 auto;
+  }
+
+  .featured-gallery {
+    padding: var(--space-5);
+    padding-top: 0;
+    align-content: start;
+  }
 }
 
 @media (max-width: 767px) {
   .products-grid {
     grid-template-columns: 1fr;
+  }
+
+  .featured-body {
+    padding: var(--space-5);
+  }
+
+  .featured-gallery {
+    gap: var(--space-2);
   }
 
   .section-title,

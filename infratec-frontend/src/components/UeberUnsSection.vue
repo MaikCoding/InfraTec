@@ -101,13 +101,17 @@
         <!-- Right: Stats + highlights -->
         <div class="about-side" data-scroll="slide-right" style="--reveal-delay: 200ms">
 
-          <!-- Image placeholder -->
-          <div
-            class="about-image"
-            role="img"
-            aria-label="Bild: OS InfraTec Team oder Anlage"
-          >
-            <span class="image-label">[ Bild: Unternehmen / Team ]</span>
+          <!-- Company / infrastructure image -->
+          <div class="about-image">
+            <img
+              src="/images/tunnel-pkw.webp"
+              alt="Verkehrstunnel mit fahrenden Fahrzeugen – Infrastruktur von OS InfraTec"
+              class="about-img"
+              width="1000"
+              height="707"
+              loading="lazy"
+              decoding="async"
+            />
             <!-- Decorative corner accent -->
             <div class="image-accent" aria-hidden="true" />
           </div>
@@ -206,7 +210,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-8);
-  align-items: start;
+  align-items: stretch;
   margin-bottom: var(--space-9);
 }
 
@@ -275,19 +279,19 @@
 /* ---- Image ---- */
 .about-image {
   position: relative;
-  aspect-ratio: 4 / 3;
+  flex: 1 1 auto;
+  min-height: 320px;
   background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary) 100%);
   border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
-.image-label {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: var(--text-light);
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .image-accent {
@@ -379,6 +383,13 @@
 @media (max-width: 1023px) {
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* On a single column the image keeps a fixed 4:3 ratio instead of stretching */
+  .about-image {
+    flex: 0 0 auto;
+    aspect-ratio: 4 / 3;
+    min-height: 0;
   }
 
   .benefits-strip {

@@ -24,16 +24,9 @@
         <!-- Card 1: Personenzugänge -->
         <article class="card" data-scroll="card-3d" style="--reveal-delay: 0ms"
           aria-label="Leistung: Personenzugänge">
-          <div class="card-image" role="img" aria-label="Bild: Personenzugang – Zugangskontrolle">
-            <div class="card-image-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
+          <div class="card-image">
+            <img src="/images/personenzugang.webp" alt="Personenzugang über moderne Zugangsschleusen"
+              class="card-img" width="1280" height="895" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-icon-wrap" aria-hidden="true">
@@ -62,16 +55,9 @@
         <!-- Card 2: Personenvereinzelung -->
         <article class="card" data-scroll="card-3d" style="--reveal-delay: 120ms"
           aria-label="Leistung: Personenvereinzelung">
-          <div class="card-image" role="img" aria-label="Bild: Personenvereinzelung – Drehkreuz">
-            <div class="card-image-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                <line x1="3" y1="9" x2="21" y2="9"/>
-                <line x1="3" y1="15" x2="21" y2="15"/>
-                <line x1="9" y1="3" x2="9" y2="21"/>
-              </svg>
-            </div>
+          <div class="card-image">
+            <img src="/images/drehsperre.webp" alt="Vollhöhen-Drehkreuz zur sicheren Personenvereinzelung"
+              class="card-img" width="1280" height="896" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-icon-wrap" aria-hidden="true">
@@ -100,14 +86,9 @@
         <!-- Card 3: Zutrittskontrolle -->
         <article class="card" data-scroll="card-3d" style="--reveal-delay: 240ms"
           aria-label="Leistung: Zutrittskontrolle">
-          <div class="card-image" role="img" aria-label="Bild: Zutrittskontrolle – Kartenleser">
-            <div class="card-image-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-              </svg>
-            </div>
+          <div class="card-image">
+            <img src="/images/rfid.webp" alt="RFID-Kartenleser für die Zutrittskontrolle"
+              class="card-img" width="1280" height="895" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-icon-wrap" aria-hidden="true">
@@ -134,14 +115,9 @@
         <!-- Card 4: Kassensysteme -->
         <article class="card" data-scroll="card-3d" style="--reveal-delay: 360ms"
           aria-label="Leistung: Abrechnungs- und Kassiersysteme">
-          <div class="card-image" role="img" aria-label="Bild: Kassensystem – POS Terminal">
-            <div class="card-image-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="5" width="20" height="14" rx="2"/>
-                <line x1="2" y1="10" x2="22" y2="10"/>
-              </svg>
-            </div>
+          <div class="card-image">
+            <img src="/images/parkhaus.webp" alt="Zufahrts- und Kassenterminal an einer Parkhaus-Schranke"
+              class="card-img" width="1280" height="895" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-icon-wrap" aria-hidden="true">
@@ -278,14 +254,19 @@
 .card-image {
   aspect-ratio: 16 / 9;
   background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
 
-.card-image-icon {
-  color: var(--primary);
-  opacity: 0.45;
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition);
+}
+
+.card:hover .card-img {
+  transform: scale(1.04);
 }
 
 /* ---- Card Body ---- */
